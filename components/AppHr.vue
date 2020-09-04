@@ -11,7 +11,7 @@ hr {
   text-align: center;
 }
 hr::after {
-  content: '🔥';
+  content: '✨';
   display: inline-block;
   position: relative;
   top: -0.9em;
