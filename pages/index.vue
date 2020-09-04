@@ -9,7 +9,7 @@
         class="px-3 text-left max-w-5xl text-english"
       >
         ⚡IDEA:<br />
-        {{ idea }}
+        &nbsp;&nbsp;&nbsp;&nbsp;{{ idea }}
       </div>
       <AppHr class="m-12" />
       <div
@@ -17,7 +17,7 @@
         class="px-3 text-left max-w-5xl text-japanese"
       >
         ⚡IDEA:<br />
-        {{ japanese }}
+        &nbsp;&nbsp;&nbsp;&nbsp;{{ japanese }}
       </div>
     </div>
     <TheFooter />
@@ -49,21 +49,34 @@ export default {
     })
     return { ...toRefs(result), message }
   },
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap',
+      },
+    ],
+  },
 }
 </script>
 
 <style>
 .text-english {
   font-size: 1.2rem;
-  font-family: 'freight-display-pro', serif;
-  font-weight: 500;
-  letter-spacing: -1px;
+  font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+  font-weight: 300;
   font-feature-settings: 'palt';
+  color: #535353;
 }
 .text-japanese {
   font-size: 1.2rem;
-  font-family: 'Noto Serif CJK', serif;
-  font-weight: 900;
+  font-family: 'Noto Sans JP', sans-serif;
   font-feature-settings: 'palt';
 }
 .text-author {
@@ -73,13 +86,12 @@ export default {
   letter-spacing: -1px;
 }
 body {
-  background-color: #f4f0e7;
+  background-color: #f5f2eb;
   font-family: 'Noto Sans JP', Raleway, HelveticaNeue, 'Helvetica Neue',
     Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  letter-spacing: 0.04em;
-  color: #010102;
+  color: #535353;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
