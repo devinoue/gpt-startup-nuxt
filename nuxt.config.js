@@ -33,12 +33,12 @@ export default {
       {
         hid: 'og:url',
         property: 'og:type',
-        content: 'https://zen-of-programming.netlify.app',
+        content: 'https://gpt-startup.netlify.app/',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://zen-of-programming.netlify.app/ogp.jpg',
+        content: 'https://gpt-startup.netlify.app/ogp.jpg',
       },
       {
         hid: 'twitter:card',
