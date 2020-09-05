@@ -14,7 +14,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: 'GPT-Startup | スタートアップのためのブレイン' || '',
+    title: 'GPT-Startup | スタートアップのためのAI' || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -48,7 +48,7 @@ export default {
       {
         hid: 'twitter:title',
         property: 'twitter:title',
-        content: 'GPT-Startup | スタートアップのためのブレイン',
+        content: 'GPT-Startup | スタートアップのためのAI',
       },
       {
         hid: 'twitter:description',
